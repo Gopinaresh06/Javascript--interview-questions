@@ -11,4 +11,79 @@ sum();
 2. What is the difference between JavaScript and JScript?
   --> In other words, you can say JScript is the same as JavaScript, but Microsoft provides it.
 
-3. 
+3. How do you handle asynchronous operations in javascript?
+for example : 
+// Creating a Promise that resolves to success
+const successPromise = new Promise((resolve, reject) => {
+  // Simulating a successful asynchronous operation
+  const success = true;
+
+  if (success) {
+    resolve("Operation completed successfully");
+  } else {
+    reject("Operation failed");
+  }
+});
+
+// Creating a Promise that resolves to an error
+const errorPromise = new Promise((resolve, reject) => {
+  // Simulating a failed asynchronous operation
+  const success = false;
+
+  if (success) {
+    resolve("Operation completed successfully");
+  } else {
+    reject("Operation failed");
+  }
+});
+
+4. write example of setTimeout.
+for example :
+function first(){
+    console.log("welcome")
+}
+
+function second(){
+    console.log("second")
+}
+setTimeout(first,3000)
+first()
+second()
+
+5. write example of setInterval.
+for example :
+function first(){
+    console.log("welcome")
+}
+
+function second(){
+    console.log("second")
+}
+setInterval(first,3000)
+first()
+second()
+
+6. what is callback function in javascript ?
+  --> A JavaScript callback is a function which is to be executed after another function has finished execution.
+for example :
+ function one() {
+     console.log("I'm funtion_1");
+ };
+function two(callBack) { 
+    console.log("I'm function_2"); 
+    callBack();
+};
+two(one)
+
+7. explain in difference between == and === in javascript.
+  --> == in JavaScript is used for comparing two variables, but it ignores the datatype of variable. === is used for comparing two variables, but this operator also checks datatype and compares two values.
+
+8. How to create new object ?
+  --> The first way is by using the new keyword, which creates a new empty object. The new keyword works like this: you give it a variable name, optionally followed by arguments to initialise its properties.
+Example:
+var x = new Number(5);. 
+
+9. what is use of map and filter in javascript?
+  --> map() and . filter() are all just other ways of iterating through arrays to perform a specific task on each element of the array, and are called methods.
+  --> The map method is used to convert each item of an array, while the filter method is used to select certain items of an array .
+
