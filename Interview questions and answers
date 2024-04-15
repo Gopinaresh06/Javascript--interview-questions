@@ -1,0 +1,14 @@
+1.  Define closure.
+   --> In JavaScript, we need closures when a variable which is defined outside the scope in reference is accessed from some inner scope.
+for example:
+var num = 10;  
+function sum()   
+{  
+document.writeln(num+num);  
+}   
+sum();  
+
+2. What is the difference between JavaScript and JScript?
+  --> In other words, you can say JScript is the same as JavaScript, but Microsoft provides it.
+
+3. 
