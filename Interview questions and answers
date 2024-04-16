@@ -87,3 +87,20 @@ var x = new Number(5);.
   --> map() and . filter() are all just other ways of iterating through arrays to perform a specific task on each element of the array, and are called methods.
   --> The map method is used to convert each item of an array, while the filter method is used to select certain items of an array .
 
+10. Explain Implicit Type Coercion in javascript.
+  --> Implicit type coercion in javascript is the automatic conversion of value from one data type to another.
+for example :
+var x = 3;
+var y = "3";
+x + y // Returns "33" 
+
+11. Explain passed by value and passed by reference.
+  --> In JavaScript, primitive data types are passed by value and non-primitive data types are passed by reference.
+for example : 
+# passed by value : 
+var y = 234;
+var z = y;
+#passed by reference :
+var obj = { name: "Vivek", surname: "Bisht" };
+var obj2 = obj;
+
