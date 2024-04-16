@@ -1,3 +1,5 @@
+INTRO : Netscape developed JavaScript and was created by Brenden Eich in the year of 1995.
+
 1.  Define closure.
    --> In JavaScript, we need closures when a variable which is defined outside the scope in reference is accessed from some inner scope.
 for example:
@@ -112,5 +114,22 @@ var obj2 = obj;
 13.  What is NaN property in JavaScript?
   --> In JavaScript, NaN is short for "Not-a-Number". In JavaScript, NaN is a number that is not a legal number. The Number. isNaN() method returns true if the value is NaN , and the type is a Number.
 
+14. What are the types of errors in javascript?
+  --> Syntax error: Syntax errors are mistakes or spelling problems in the code that cause the program to not execute at all or to stop running halfway through. Error messages are usually supplied as well.
+  --> Logical error: Reasoning mistakes occur when the syntax is proper but the logic or program is incorrect. 
 
+15. What are undeclared and undefined variables?
+  --> Undefined: It occurs when a variable is declare not not assign any value. Undefined is not a keyword.
+  --> Undeclared: It occurs when we try to access any variable which is not initialize or declare earlier using the var or const keyword. 
 
+16. What do you mean by NULL in JavaScript?
+   --> The NULL value represents that no value or no object. It is known as empty value/object.
+
+17.  What are the types of Pop up boxes available in JavaScript?
+  --> There are three types of pop boxes available in JavaScript.
+      * Alert()
+      * Confirm()
+      * Prompt()
+
+18. What is the difference between an alert box and a confirmation box?
+  --> An alert box will display only one button which is the OK button. It is used to inform the user about the agreement has to agree. But a Confirmation box displays two buttons OK and cancel, where the user can decide to agree or not.
