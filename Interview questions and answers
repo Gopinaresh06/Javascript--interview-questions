@@ -104,3 +104,13 @@ var z = y;
 var obj = { name: "Vivek", surname: "Bisht" };
 var obj2 = obj;
 
+12. explain session storage and local storage.
+  --> The sessionStorage object stores data for only one session.(The data is deleted when the browser is closed).
+  --> The localStorage Object which stores data with no expiration date.(The data is not deleted when the browser is closed, and are available in future sessions).
+  --> Both let you store key/value pairs in the browser.
+
+13.  What is NaN property in JavaScript?
+  --> In JavaScript, NaN is short for "Not-a-Number". In JavaScript, NaN is a number that is not a legal number. The Number. isNaN() method returns true if the value is NaN , and the type is a Number.
+
+
+
