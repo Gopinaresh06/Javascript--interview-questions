@@ -1,0 +1,28 @@
+What is Fetch API ?
+  --> The Fetch API interface allows web browser to make HTTP requests to web servers.
+  --> fETCH API makes to http requests like GET, POST, PUT, DELETE.
+  --> it will return a promises of asynchronous operation.
+Example :
+fetch("https://jsonplaceholder.typicode.com/users")
+.then((response) => response.json())
+.then((data) => console.log(data))
+
+using POST method:
+Example :
+var data1 = {
+    userId : 123,
+    title : " test post",
+    number : 1234567890
+}
+fetch("https://jsonplaceholder.typicode.com/posts",{
+    method: "POST",
+    body: JSON.stringify(data1),
+    headers: {
+        "content-type" : "application/json",
+    }
+})
+.then((response) => response.json())
+.then((data) => console.log(data))
+
+  --> Now, its PUT and DELETE request , then the method type is change and configuration of object.
+
