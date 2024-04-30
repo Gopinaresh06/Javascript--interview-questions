@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <label>Enter the numbers : </label>
+    <input id="data" type="number" />
+    <br>
+    <br>
+    <button onclick="isArmStrong()">check</button>
+    <div id="add">armStrong or Not : </div>
+    <script>
+    function isArmStrong(){
+    var box1 = document.getElementById("data");
+    var boxValue = Number(box1.value);
+    console.log(boxValue)
+    var result = document.getElementById("add");
+    
+    var inputStr = boxValue.toString(); 
+	var len = inputStr.length;
+	var sum = 0;
+	for(let i = 0 ; i < len ; i++){
+    sum = sum + Math.pow(parseInt(inputStr[i]),len)
+	}
+	if(sum == boxValue){
+	 result.innerHTML = "armStrong or Not : yes";
+	}else{
+      result.innerHTML = "armStrong or Not : no";
+}
+    
+    }
+   
+    </script>
+</body>
+
+</html>
