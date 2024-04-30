@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <label>Enter the numbers : </label>
+    <input id="data" type="text" />
+    <br>
+    <br>
+    <button onclick="sumOfDigit()">Add sum of digit</button>
+    <div id="add"></div>
+    <script>
+    function sumOfDigit() {
+        var boxData = document.getElementById("data");
+		var result = document.getElementById("add");
+        var dataValue = Number(boxData.value);
+        console.log(dataValue)
+
+		var sum = 0;
+            dataValue.toString().split("").forEach((digit) => {
+                sum = sum + parseInt(digit)
+            })
+            return result.innerHTML = "Sum of digits: " + sum;
+        }
+    </script>
+</body>
+
+</html>
